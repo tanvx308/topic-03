@@ -1,0 +1,5 @@
+package fis.java.topic3.exception;
+
+public class CustomException {
+
+}
