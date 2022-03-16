@@ -9,13 +9,13 @@ public class Transaction {
 	private String taiKhoanNguoiHuong;
 	private String tenNguoiHuong;
 	private String tenNganHangHuong;
-	private Long soTien;
+	private Double soTien;
 	private String loaiPhi;
-	private Long soTienPhi;
+	private Double soTienPhi;
 	private String noiDungChuyenTien;
 	
 	public Transaction(String soLenhGiaoDich, Date thoiGianGiaoDich, String taiKhoanNguon, String taiKhoanNguoiHuong,
-			String tenNguoiHuong, String tenNganHangHuong, Long soTien, String loaiPhi, Long soTienPhi,
+			String tenNguoiHuong, String tenNganHangHuong, Double soTien, String loaiPhi, Double soTienPhi,
 			String noiDungChuyenTien) {
 		this.soLenhGiaoDich = soLenhGiaoDich;
 		this.thoiGianGiaoDich = thoiGianGiaoDich;
@@ -81,11 +81,11 @@ public class Transaction {
 		this.tenNganHangHuong = tenNganHangHuong;
 	}
 
-	public Long getSoTien() {
+	public Double getSoTien() {
 		return soTien;
 	}
 
-	public void setSoTien(Long soTien) {
+	public void setSoTien(Double soTien) {
 		this.soTien = soTien;
 	}
 
@@ -97,11 +97,11 @@ public class Transaction {
 		this.loaiPhi = loaiPhi;
 	}
 
-	public Long getSoTienPhi() {
+	public Double getSoTienPhi() {
 		return soTienPhi;
 	}
 
-	public void setSoTienPhi(Long soTienPhi) {
+	public void setSoTienPhi(Double soTienPhi) {
 		this.soTienPhi = soTienPhi;
 	}
 
