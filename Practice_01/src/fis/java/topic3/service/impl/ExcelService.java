@@ -267,4 +267,13 @@ public class ExcelService implements FileService {
 			e.printStackTrace();
 		}
 	}
+	
+	
+	//hàm kiểm tra giao dịch thanh toán đã được thực hiện chưa
+	public boolean checkTransfer(String from, String message, Double amount, List<Transaction> transactions) {
+		Transaction trans = transactions.stream().filter(i -> i.getTaiKhoanNguon().equals(from) 
+				&& i.getNoiDungChuyenTien().equalsIgnoreCase(message)
+				&& i.getSoTien().equals(amount)).findFirst().orElse(null);
+		return trans != null;
+	}
 }
